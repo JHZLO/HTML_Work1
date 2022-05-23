@@ -10,22 +10,26 @@
 			padding: 20px;
 			margin: 0;
 		}
-		ol {
+		#grid ol {
 			font-size: 20px;
 			border-right: 1px solid gray;
 			width: 120px;
 			margin: 0;
 			padding: 30px;
-			
+			padding-left: 40px;
 		}
 		body{
 			margin: 0;
 		}
-		
 
-		
-		#active{
-			color: red;
+		#grid{
+	    
+	        display:grid;
+	        grid-template-columns: 170px 1fr;
+      	}
+
+		#article{
+			padding-left: 50px;
 		}
 		.saw{
 			color: gray;
@@ -36,12 +40,16 @@
 
 <body>
 <h1><a href="index.html" style="color: black; text-decoration: none;">Dog</font></a></h1>
-<ol>
-	<li><a href="포메라니안.html" class="saw">포메라니안</a></li><br>
-	<li><a href="푸들.html" class="saw">푸들</a></li><br>
-	<li><a href="사모예드.html" title="사모예드의 귀여운 동영상을 볼 수 있다."style="color: black;">사모예드</a></li>
-</ol>
-<h2>사모예드</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8oLkF3WfPT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<img src="samoyed.jpg" width="100%">
-<a href="JUN.html">Dog</a>
+<div id="grid">
+	<ol>
+		<li><a href="포메라니안.html" class="saw">포메라니안</a></li><br>
+		<li><a href="푸들.html" class="saw">푸들</a></li><br>
+		<li><a href="사모예드.html" title="사모예드의 귀여운 동영상을 볼 수 있다."style="color: black;">사모예드</a></li>
+	</ol>
+	<div id="article">
+		<h2>사모예드</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/8oLkF3WfPT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<img src="samoyed.jpg" width="100%">
+	</div>
+</div>
+</body>
