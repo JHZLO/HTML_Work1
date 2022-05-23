@@ -1,0 +1,55 @@
+		a {
+			color: gray;
+			text-decoration: none;
+		}
+		h1 {
+			font-size:60px;
+			text-align: center;
+			border-bottom: 1px solid gray;
+			padding: 20px;
+			margin: 0;
+		}
+		#grid ol {
+			font-size: 20px;
+			border-right: 1px solid gray;
+			width: 120px;
+			margin: 0;
+			padding: 30px;
+			padding-left: 40px;
+		}
+		body{
+			margin: 0;
+		}
+
+		#grid{
+	    
+	        display:grid;
+	        grid-template-columns: 170px 1fr;
+      	}
+
+		#active{
+			color: red;
+			font-size: 5px;
+			text-align: end;
+		}
+
+		#article{
+			padding-left: 50px;
+		}
+		.saw{
+			color: gray;
+		}
+
+		@media(max-width: 800px){
+			#grid{
+	    
+	        display:block;
+      	  	}
+      	  	#grid ol{
+      	  		border-right: none;
+      	  	}
+      	  	h1{
+      	  		border-bottom: none;
+      	  	}
+		}
+		
