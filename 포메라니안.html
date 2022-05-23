@@ -11,22 +11,27 @@
 			padding: 20px;
 			margin: 0;
 		}
-		ol {
+		#grid ol {
 			font-size: 20px;
 			border-right: 1px solid gray;
 			width: 120px;
 			margin: 0;
 			padding: 30px;
-			
+			padding-left: 40px;
 		}
 		body{
 			margin: 0;
 		}
-		
-	
-		
-		#active{
-			color: red;
+
+		#grid{
+	    
+	        display:grid;
+	        grid-template-columns: 170px 1fr;
+      	}
+
+
+		#article{
+			padding-left: 50px;
 		}
 		.saw{
 			color: gray;
@@ -37,11 +42,17 @@
 
 <body>
 <h1><a href="index.html" style="color: black; text-decoration: none;">Dog</font></a></h1>
-<ol>
-	<li><a href="포메라니안.html"style="color: black;">포메라니안</a></li><br>
-	<li><a href="푸들.html"class="saw">푸들</a></li><br>
-	<li><a href="사모예드.html"class="saw" title="사모예드의 귀여운 동영상을 볼 수 있다.">사모예드</a></li>
-</ol>
-<h2>포메라니안</h2>
-<img src="포메라니안.jpg" width="100%">
-<a href="JUN.html">Dog</a>
+<div id="grid">
+	<ol>
+		<li><a href="포메라니안.html"style="color: black;">포메라니안</a></li><br>
+		<li><a href="푸들.html"class="saw">푸들</a></li><br>
+		<li><a href="사모예드.html"class="saw" title="사모예드의 귀여운 동영상을 볼 수 있다.">사모예드</a></li>
+	</ol>
+
+	<div id="article">
+		<h2>포메라니안</h2>
+		<img src="포메라니안.jpg" width="50%">
+	</div>
+</div>
+
+</body>
