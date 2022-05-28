@@ -3,6 +3,9 @@
 	<title>Sort Of My Favorit Dog - html</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="colors.js"></script>
+
 </head>
 
 <body>
@@ -11,39 +14,10 @@
 	
 
 	<input id="night_day"type="button" value="night" onclick="
-	
-	var target = document.querySelector('body')
-
-	if(this.value==='night'){
-		target.style.backgroundColor = 'black'
-		target.style.color = 'white'
-		this.value = 'day'
-
-		var alist = document.querySelectorAll('a');
-		var i = 0;
-		while(i<alist.length){
-			alist[i].style.color = 'powderblue';
-			i = i + 1
-		}
-	} else{
-		target.style.backgroundColor = 'white'
-		target.style.color = 'black'
-		this.value = 'night'
-
-		var alist = document.querySelectorAll('a');
-		var i = 0;
-		while(i<alist.length){
-			alist[i].style.color = 'gray';
-			i = i + 1
-
-		}
-	}
-	
+	nightDayHandler(this);
 	">
 
  	
-
-
 <div id="grid">	
 	<ol>
 		<li><a href="포메라니안.html" >포메라니안</a></li><br>
@@ -98,6 +72,6 @@
 
 	</p>
 
-
+	
 
 </body>
